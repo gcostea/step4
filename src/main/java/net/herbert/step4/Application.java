@@ -35,7 +35,7 @@ public class Application {
                                     .addLast(new HttpResponseEncoder())
                                     /* Your code bellow */
                                     .addLast(new HttpRequestHandler());
-                            /* Your code above */
+                                    /* Your code above */
                         }
                     });
             serverBootstrap.bind(8080)
