@@ -58,7 +58,7 @@ public class Application {
                 var request = (HttpRequest) msg;
                 var response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
                 var content = "";
-                if (request.uri().endsWith("/cities")) {
+                if (request.uri().contains("/cities")) {
                     /* Your actual code bellow */
                     content = getCitiesFromDatabase().stream()
                                 .map(City::getName)
